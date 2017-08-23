@@ -4,20 +4,18 @@ let c=0;
 
 $('.box').on('click', function() { 
 	c++;
-
-if (c%2===0 && $(this).text()!=="O"){
+if (c%2===0 && $(this).text()===''){
 $(this).append('<h1 class="xsos">X</h1>');
 	$('.disp').text("O's turn");
 
 } 
-else if(c%2!==0 && $(this).text()!=="X"){
+else if(c%2!==0 && $(this).text()===''){
 $(this).append('<h1 class="xsos">O</h1>');
 	$('.disp').text("X's turn");
 
 } else{
 	alert('This is already taken');
 	c=c-1;
-
 }
 
 });
