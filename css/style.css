@@ -5,4 +5,25 @@
 .box {
   border: 1px solid black;
   height: 150px;
+  text-align:center;
+
+}
+.xsos {
+font-size: 120px;
+}
+
+.dispHead {
+	text-align: center;
+}
+
+.disp {
+	height:50px;
+	width:200px;
+	border:1px solid black;
+	margin:auto;
+	text-align: center;
+}
+
+#res {
+	text-align: center;
 }

@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- jQuery from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<script src="js/app.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
@@ -23,6 +25,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <h1>Tic Tac Toe</h1>
+          <button id="res">reset</button>
           <hr>
         </div>
       </div>
@@ -31,18 +34,31 @@
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
         <div class="col-md-6 col-md-offset-3" id="board">
-
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
           </div>
 
+           <div class="row">
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+          </div>
 
+           <div class="row">
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+          </div>
 
         </div>
+      </div>
+      <h1 class="dispHead">Whos Turn</h1>
+      <div class="disp">
+        O's turn
       </div>
     </div>
   </body>
